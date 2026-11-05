@@ -2,73 +2,60 @@
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI KINO STUDIO 555</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#080b14;color:#fff;font-family:Arial,sans-serif}
-header{padding:22px 18px;background:linear-gradient(120deg,#18213a,#10121c);border-bottom:1px solid #30384c}
-.logo{font-size:24px;font-weight:900;color:#f5bd55}
-header p{color:#aab4c8;font-size:13px}
+body{margin:0;background:#080b14;color:#fff;font-family:Arial}
+header{padding:23px;background:linear-gradient(120deg,#202d49,#111522)}
+.logo{font-size:25px;font-weight:bold;color:#f5bd55}
+header p{color:#b6c1d5;font-size:13px}
 main{padding:16px;max-width:850px;margin:auto}
-h2{font-size:21px}
+h2{font-size:20px}
 .modules{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.module{background:#151c2d;border:1px solid #303b54;border-radius:13px;padding:16px;color:white;text-align:left;min-height:105px}
-.module.active{border:2px solid #e9ae42;background:#27243a}
-.module strong{display:block;margin:8px 0}
-.module small{color:#aab4c8}
-.card{background:#141b2b;border:1px solid #303b54;border-radius:15px;padding:17px;margin-top:17px}
-label{display:block;margin:15px 0 7px;color:#dce2ef;font-size:14px}
-input,textarea,select{width:100%;padding:13px;border-radius:9px;border:1px solid #3a4660;background:#0c1220;color:white;font-size:15px}
+.module{background:#171f32;color:white;border:1px solid #34415d;border-radius:13px;padding:17px;text-align:left;min-height:100px}
+.module.active{border:2px solid #efb94e;background:#29243b}
+.module strong{display:block;margin:9px 0}
+.module small{color:#aebbd0}
+.card{background:#151d2e;border:1px solid #34415d;border-radius:15px;padding:17px;margin-top:18px}
+label{display:block;margin:15px 0 7px;font-size:14px;color:#dbe3f2}
+input,textarea,select{width:100%;padding:13px;background:#0b1221;color:white;border:1px solid #43516d;border-radius:9px;font-size:15px}
 textarea{resize:vertical}
 button{cursor:pointer}
-.primary{width:100%;padding:16px;border:0;border-radius:10px;background:#eab34c;color:#111;font-size:16px;font-weight:bold;margin-top:18px}
-.secondary{padding:10px;border:1px solid #46516a;border-radius:8px;background:#202a40;color:white}
-.status{color:#c4cce0;line-height:1.6;white-space:pre-wrap}
-footer{text-align:center;color:#71809b;padding:25px;font-size:12px}
+.primary{width:100%;padding:16px;background:#eab34c;color:#111;border:0;border-radius:10px;font-size:16px;font-weight:bold;margin-top:17px}
+.secondary{background:#26334d;color:white;border:1px solid #52617d;padding:12px;border-radius:9px}
+.result{white-space:pre-wrap;line-height:1.6;color:#d6e0f2;overflow-wrap:anywhere}
+footer{text-align:center;color:#8290a8;padding:25px;font-size:12px}
 @media(min-width:650px){.modules{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
 <header>
 <div class="logo">🎬 AI KINO STUDIO 555</div>
-<p>Universal AI Creator — Kino, musiqa, multfilm va yangiliklar</p>
+<p>Universal AI Creator | Barcha ijod bir joyda</p>
 </header>
-
 <main>
-<h2>Ijod turini tanlang</h2>
+<h2>🎥 Ijod turini tanlang</h2>
 <div class="modules">
-<button class="module active" data-type="Kino" onclick="choose(this)">
-🎬 <strong>KINO YARATISH</strong><small>Realistik filmlar va seriallar</small>
-</button>
-<button class="module" data-type="Qo‘shiq" onclick="choose(this)">
-🎵 <strong>QO‘SHIQ YARATISH</strong><small>Rep, pop va boshqa janrlar</small>
-</button>
-<button class="module" data-type="Multfilm" onclick="choose(this)">
-🧸 <strong>MULTFILM YARATISH</strong><small>3D animatsiya va hikoyalar</small>
-</button>
-<button class="module" data-type="Jahon yangiliklari" onclick="choose(this)">
-🌍 <strong>JAHON YANGILIKLARI</strong><small>So‘nggi xabarlar va tahlillar</small>
-</button>
-<button class="module" data-type="Futbol yangiliklari" onclick="choose(this)">
-⚽ <strong>FUTBOL YANGILIKLARI</strong><small>Natijalar, transferlar va tahlil</small>
-</button>
-<button class="module" data-type="Hujjatli film" onclick="choose(this)">
-🎥 <strong>HUJJATLI FILM</strong><small>Tarix, tabiat va texnologiya</small>
-</button>
+<button class="module active" data-type="Kino" onclick="choose(this)">🎬<strong>KINO</strong><small>Realistik filmlar, drama, jangari</small></button>
+<button class="module" data-type="Qo‘shiq" onclick="choose(this)">🎵<strong>QO‘SHIQ</strong><small>Rep, pop, estrada, musiqa</small></button>
+<button class="module" data-type="Multfilm" onclick="choose(this)">🧸<strong>MULTFILM</strong><small>3D animatsiya, bolalar hikoyasi</small></button>
+<button class="module" data-type="Jahon yangiliklari" onclick="choose(this)">🌍<strong>JAHON YANGILIKLARI</strong><small>Dunyo xabarlari va tahlillar</small></button>
+<button class="module" data-type="Futbol yangiliklari" onclick="choose(this)">⚽<strong>FUTBOL</strong><small>Natijalar, transferlar, tahlil</small></button>
+<button class="module" data-type="Hujjatli film" onclick="choose(this)">🎥<strong>HUJJATLI FILM</strong><small>Tarix, tabiat, texnologiya</small></button>
 </div>
 
 <section class="card">
-<h2 id="formTitle">🎬 Yangi kino loyihasi</h2>
+<h2 id="heading">🎬 Yangi kino yaratish</h2>
 
-<label>Kino yoki loyiha mavzusi</label>
-<textarea id="topic" rows="4" placeholder="Mavzuni shu yerga yozing..."></textarea>
+<label>Mavzu yoki g‘oyangiz</label>
+<textarea id="topic" rows="4" placeholder="Masalan: Ikkinchi jahon urushi haqida realistik kino..."></textarea>
 
-<label>Kontent tili</label>
+<label>Til</label>
 <select id="language">
-<option value="O‘zbekcha">🇺🇿 O‘zbekcha</option>
-<option value="Русский">🇷🇺 Русский</option>
-<option value="English">🇬🇧 English</option>
+<option>O‘zbekcha</option>
+<option>Русский</option>
+<option>English</option>
 </select>
 
 <label>Davomiyligi</label>
@@ -82,72 +69,78 @@ footer{text-align:center;color:#71809b;padding:25px;font-size:12px}
 
 <label>Video formati</label>
 <select id="format">
-<option>YouTube — 16:9</option>
-<option>Instagram Reels — 9:16</option>
-<option>YouTube Shorts — 9:16</option>
-<option>Instagram Post — 1:1</option>
+<option>YouTube 16:9</option>
+<option>Instagram Reels 9:16</option>
+<option>YouTube Shorts 9:16</option>
+<option>Instagram 1:1</option>
 </select>
 
 <label>Uslub</label>
 <select id="style">
-<option>Realistik, professional cinematic</option>
-<option>Hujjatli film</option>
+<option>Realistik cinematic</option>
+<option>Hollywood kino uslubi</option>
 <option>3D animatsiya</option>
+<option>Hujjatli film</option>
 <option>Yangiliklar studiyasi</option>
-<option>Jangari va sarguzasht</option>
-<option>Romantik va drama</option>
-<option>Komediya</option>
+<option>Professional musiqiy klip</option>
 </select>
 
 <label>Qo‘shimcha talablar</label>
-<textarea id="extra" rows="3" placeholder="Masalan: professional diktor, subtitr, dramatik musiqa..."></textarea>
+<textarea id="extra" rows="3" placeholder="Diktor, aktyorlar, musiqa, subtitr..."></textarea>
 
-<button class="primary" onclick="createProject()">🚀 LOYIHANI BOSHLASH</button>
+<button class="primary" onclick="generate()">🚀 LOYIHANI YARATISH</button>
 </section>
 
 <section class="card">
-<h2>📋 Loyiha topshirig‘i</h2>
-<div id="result" class="status">Hozircha loyiha tanlanmagan.</div>
+<h2>📋 AI loyiha topshirig‘i</h2>
+<div id="result" class="result">Hozircha loyiha yo‘q. Avval mavzu kiriting.</div>
+<button class="secondary" onclick="copyResult()">📋 Topshiriqni nusxalash</button>
 </section>
-
-<footer>AI KINO STUDIO 555 • Universal Creative Platform</footer>
+<footer>AI KINO STUDIO 555 | Universal Creative Platform</footer>
 </main>
 
 <script>
 let selected="Kino";
-
-function choose(button){
-document.querySelectorAll(".module").forEach(b=>b.classList.remove("active"));
-button.classList.add("active");
-selected=button.dataset.type;
-document.getElementById("formTitle").textContent="✨ Yangi "+selected+" loyihasi";
+function choose(btn){
+document.querySelectorAll(".module").forEach(x=>x.classList.remove("active"));
+btn.classList.add("active");
+selected=btn.dataset.type;
+document.getElementById("heading").textContent="✨ "+selected+" loyihasi";
 }
+function generate(){
+let topic=document.getElementById("topic").value.trim();
+if(!topic){alert("Avval mavzuni yozing!");return;}
+let lang=document.getElementById("language").value;
+let duration=document.getElementById("duration").value;
+let format=document.getElementById("format").value;
+let style=document.getElementById("style").value;
+let extra=document.getElementById("extra").value;
+let prompt=`SEN PROFESSIONAL AI KONTENT ISHLAB CHIQARUVCHISAN.
 
-function createProject(){
-const topic=document.getElementById("topic").value.trim();
-if(!topic){
-alert("Avval mavzuni yozing!");
-return;
+LOYIHA: ${selected}
+MAVZU: ${topic}
+TIL: ${lang}
+DAVOMIYLIGI: ${duration}
+FORMAT: ${format}
+USLUB: ${style}
+QO‘SHIMCHA: ${extra}
+
+VAZIFA:
+1. Professional loyiha konsepsiyasini yarat.
+2. To‘liq ssenariy va sahnalar rejasini yoz.
+3. Har bir sahna uchun batafsil video prompt tayyorla.
+4. Ovoz, musiqa va subtitrlarni rejalashtir.
+5. Barcha sahnalarda obrazlar izchilligini saqla.
+6. Tayyor kontentni montaj qilish rejasini tuz.
+7. Faktik yangiliklarda ishonchli manbalarni ko‘rsat, tasdiqlanmagan xabarni fakt sifatida bermagin.
+
+Natijani professional ishlab chiqarish uchun tayyorla.`;
+document.getElementById("result").textContent=prompt;
 }
-const data={
-type:selected,
-topic:topic,
-language:document.getElementById("language").value,
-duration:document.getElementById("duration").value,
-format:document.getElementById("format").value,
-style:document.getElementById("style").value,
-extra:document.getElementById("extra").value
-};
-document.getElementById("result").textContent=
-"LOYIHA TOPSHIRIG‘I\n\n"+
-"Yo‘nalish: "+data.type+"\n"+
-"Mavzu: "+data.topic+"\n"+
-"Til: "+data.language+"\n"+
-"Davomiylik: "+data.duration+"\n"+
-"Format: "+data.format+"\n"+
-"Uslub: "+data.style+"\n"+
-"Talablar: "+data.extra+
-"\n\nLoyiha topshirig‘i tayyor. Haqiqiy ssenariy, ovoz va video yaratish uchun AI xizmatlari API orqali ulanishi kerak.";
+function copyResult(){
+let t=document.getElementById("result").textContent;
+if(!t){return;}
+navigator.clipboard.writeText(t).then(()=>alert("Topshiriq nusxalandi!")).catch(()=>alert("Matnni belgilab nusxalang."));
 }
 </script>
 </body>
